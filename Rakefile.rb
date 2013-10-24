@@ -49,6 +49,16 @@ task :autotx_output => [:msbuild] do
   CLEAN.include(target)
 end
 
+task :gittask do
+  puts 'adding'
+  `git add -A`
+  puts 'committing'
+  `git commit -am "Released version #{BUILD_VERSION}"`
+  puts 'pushing'
+  `git push origin master`
+end
+
 task :output => [:autotx_output]
 
 task :default  => ["env:release", "assemblyinfo", "msbuild", "output"]
+task :release => ["env:release", :msbuild, :output, :gittask]
