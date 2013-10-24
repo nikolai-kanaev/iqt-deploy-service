@@ -45,8 +45,15 @@ end
 
 task :autotx_output => [:msbuild] do
   target = File.join(FOLDERS[:binaries], PROJECTS[:autotx][:id])
-  copy_files FOLDERS[:autotx][:out], "*.{xml,dll,pdb,config}", target
+  copy_files FOLDERS[:autotx][:out], "*.{xml,config,svc, Release.config, svc.cs}", target
   CLEAN.include(target)
+end
+
+zip :do_zip do |zip|
+  zip.directories_to_zip File.join(FOLDERS[:src], PROJECTS[:autotx][:dir], "build")
+  #zip.additional_files FOLDERS[:autotx][:out], "*.{svc, config}"
+  zip.output_file = "#{PROJECTS[:autotx][:title]}-#{SemVer.find.to_s}.zip"
+  zip.output_path = "C:/Builds"
 end
 
 task :gittask do
@@ -58,7 +65,14 @@ task :gittask do
   `git push origin master`
 end
 
+# Deploy
+zip :peds_zip => [:app_morph, :nlog_morph, :add_msdeploy_xml] do |zip|
+  zip.directories_to_zip FOLDERS[:peds][:out]
+  zip.output_file = "#{PROJECTS[:peds][:title]}-#{SemVer.find.to_s}.zip"
+  zip.output_path = FOLDERS[:binaries]
+end
+
 task :output => [:autotx_output]
 
-task :default  => ["env:release", "assemblyinfo", "msbuild", "output"]
+task :default  => ["env:release", "assemblyinfo", "msbuild", "output", "do_zip"]
 task :release => ["env:release", :msbuild, :output, :gittask]

@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="24a1fb8a-42c8-48ef-8e19-51d6f6e222b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile.rb" afterPath="$PROJECT_DIR$/Rakefile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SharedAssemblyInfo.cs" afterPath="$PROJECT_DIR$/src/SharedAssemblyInfo.cs" />
     </list>
     <ignored path="iqt-deploy-service.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="24a1fb8a-42c8-48ef-8e19-51d6f6e222b7" time="1382610181758" ignored="false" />
-    <file path="/Rakefile.rb" changelist="24a1fb8a-42c8-48ef-8e19-51d6f6e222b7" time="1382611866862" ignored="false" />
+    <file path="/Rakefile.rb" changelist="24a1fb8a-42c8-48ef-8e19-51d6f6e222b7" time="1382614594569" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,27 @@
       <file leaf-file-name="Rakefile.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rakefile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.89856803">
+            <state line="72" column="19" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.8319624">
+              <folding>
+                <element signature="e#430#1629#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_details.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildscripts/project_details.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paths.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildscripts/paths.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -39,7 +60,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buildscripts/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+            <state line="30" column="77" selection-start="1069" selection-end="1117" vertical-scroll-proportion="-12.24">
               <folding />
             </state>
           </provider>
@@ -275,7 +296,28 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/buildscripts/paths.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildscripts/project_details.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -284,15 +326,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/buildscripts/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+        <state line="30" column="77" selection-start="1069" selection-end="1117" vertical-scroll-proportion="-12.24">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.89856803">
-          <folding />
+        <state line="72" column="19" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.8319624">
+          <folding>
+            <element signature="e#430#1629#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
